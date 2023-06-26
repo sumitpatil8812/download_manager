@@ -13,7 +13,7 @@ class SimpleUIController extends GetxController {
 
   RxBool isLoading = true.obs;
   RxString orderBy = "latest".obs;
-  RxString apikey = "Your Api Key".obs;
+  RxString apikey = "Your Api Key".obs; // added access key here
   var selectedIndex = 0.obs;
 
   List<String> orders = [

@@ -1,5 +1,6 @@
 import 'package:download_manager/utils/constants.dart';
 import 'package:download_manager/views/home_screen.dart';
+import 'package:download_manager/widgets/my_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -34,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     _animation.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        Get.to(HomeView());
+        Get.to(MyBottomNavBar());
       }
     });
   }
