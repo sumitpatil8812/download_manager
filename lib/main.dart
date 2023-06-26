@@ -1,11 +1,11 @@
 import 'package:download_manager/views/splash_screen.dart';
-import 'package:download_manager/widgets/my_bottom_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_file_downloader/flutter_file_downloader.dart';
 import 'package:get/get.dart';
 
 void main() {
   FileDownloader.setMaximumParallelDownloads(10);
+
   runApp(const MyApp());
 }
 
@@ -16,6 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Download Manager',
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),

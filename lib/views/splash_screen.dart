@@ -35,7 +35,7 @@ class _SplashScreenState extends State<SplashScreen>
 
     _animation.addStatusListener((status) {
       if (status == AnimationStatus.completed) {
-        Get.to(MyBottomNavBar());
+        Get.to(const MyBottomNavBar());
       }
     });
   }
